@@ -3,11 +3,16 @@
   <head>
     <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Neil Brown</title>
-    <meta name="description" content="Neil Brown - Website and app developer">
+    <title>Seize The Night</title>
+    <meta name="description" content="Lucid dreaming app. Dream journal and reality check reminder.">
     <meta name="author" content="Neil Brown">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap.native@4.2.0/dist/bootstrap-native.min.js"></script>
 
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
@@ -17,62 +22,155 @@
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-
   </head>
 
   <body>
-
-    <header id="header">
-      <img src="logo.jpg">
-      <h1>Neil Brown</h1>
-
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-
-    <div id="container">
-      <div class="inner">
-        <div id="content">
-
-          <div id="seize-the-night" class="content-region hide">
-            <h2>Seize The Night</h2>
-            <p>
-              Android application for recording and learning about lucid dreams
-            </p>
-          </div>
-
-          <div id="eiken-solutions" class="content-region hide">
-            <h2>Eiken Solutions</h2>
-            <p>
-              Educational website for helping students pass the Eiken English proficiency test
-						</p>
-          </div>
-
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor.
-            </p>
-          </div>
-
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="logo">
+          Seize The Night
+      </a>
+    </nav>
+    <div id="mockupContainer" class="container">
+      <div class="row">
+        <div class="col">
+          <img class = "col mockup" src="./img/menu.png" alt="menu mockup">
+        </div>
+        <div class="col">
+          <img class = "col mockup" src="./img/journal.png" alt="journal mockup">
+        </div>
+        <div class="col">
+          <img class = "col mockup" src="./img/editor.png" alt="editor mockup">
+        </div>
+        <div class="col">
+          <img class = "col mockup" src="./img/tutorial.png" alt="tutorial mockup">
+        </div>
+        <div class="col">
+          <img class = "col mockup" src="./img/alert.png" alt="alert mockup">
+        </div>
+      </div>
+      <div class="row">
+        <h1>MASTER YOUR DREAMS</h1>
+      </div>
+      <p>All-in-one lucid dreaming companion</P>
+      <div class="row">
+        <div class="col">
+          <a id="googlePlayBadge" href='https://play.google.com/store/apps/details?id=com.zarathustra77.seizethenight&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
         </div>
       </div>
     </div>
 
-    <footer>
-      Footer region
-    </footer>
 
-    <!-- Load additional JS scripts here -->
+    <h2>App Features</h2>
+    <div id="featuresContainer" class="container">
+      <div id="features">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3>POWERFUL JOURNAL</h3>
+            <p>
+              Easily find your dreams by utilising Seize The Night's robust filter.
+            </p>
+            <p>
+              Filter by date, lucid dreams only and search crierion.
+            </p>
+          <p>
+            Press a dream menu item to expand and edit if necessary
+          </p>
+          <p>
+            Long press a dream menu item to show the delete dream menu
+          </p>
+          </div>
+          <div class="col-4 right">
+              <img class = "col mockup" src="./img/journal.png" alt="journal mockup">
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-4 left">
+              <img class = "col mockup" src="./img/editor.png" alt="editor mockup">
+          </div>
+          <div class="col-8">
+            <h3>SIMPLISTIC ENTRY</h3>
+            <p>
+              Record your dreams using the standard keyboard.
+            </p>
+            <p>
+              Use the built in microphone for voice to text entry for maximum simplicity.
+            </p>
+            <p>
+              Record the date and time using the flexible date and time picker.
+            </p>
+            <p>
+              Make sure to check the box if your dream was lucid for maximum search performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3>REALITY CHECK REMINDERS</h3>
+            <p>
+              Choose the reminder frequency in minutes.
+            </p>
+            <p>
+              Personalize the reminder title and message.
+            </p>
+            <p>
+              Never forget to do a reality check again.
+            </p>
+            <p>
+              Easy to pause reminders for total versatility
+            </p>
+          </div>
+          <div class="col-4 right">
+              <img class = "col mockup" src="./img/alert.png" alt="alert mockup">
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-4 left">
+              <img class = "col mockup" src="./img/settings.png" alt="settings mockup">
+          </div>
+          <div class="col-8">
+            <h3>CUSTOMIZE DATE FORMAT</h3>
+            <p>
+              Choose the most natural way to display dates throught the app
+            </p>
+            <p>
+              dd-mm-yyyy (23-01-2023)
+            </p>
+            <p>
+              mm-dd-yyyy (01-23-2023)
+            </p>
+            <p>
+              yyyy-mm-dd (2023-01-23)
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-8 right">
+            <h3>LEARN TECHNIQUES TO SUPERCHARGE YOUR DREAMING</h3>
+            <p>
+              Learn about the different ways to achieve lucid dreams (DILD vs WILD)
+            </p>
+            <p>
+              Learn how to increase your chances of success using methods like the Wake Back To Bed method
+            </p>
+            <p>
+              Learn how to integrate reality checks into your daily life
+            </p>
+            <p>
+              Learn how to transition directly into a lucid dream from a weaking state using the WILD method
+            </p>
+          </div>
+          <div class="col-4">
+              <img class = "col mockup" src="./img/tutorial.png" alt="tutorials mockup">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
 
   </body>
